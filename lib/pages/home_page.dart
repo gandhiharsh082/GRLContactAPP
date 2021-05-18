@@ -6,11 +6,19 @@ class HomePage extends StatelessWidget {
     var day = 30;
     return Scaffold(
       appBar: AppBar(
-        title: Text('GRL App'),
+        title: Text(
+          'GRL App',
+        ),
       ),
       body: Center(
         child: Container(
-          child: Text("Hello $day world New"),
+          child: Text(
+            "Hello $day world New",
+            style: TextStyle(
+              color: Colors.brown[600],
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
       drawer: Drawer(),
